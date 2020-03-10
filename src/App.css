@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  background-color: #3a4750;
+}
+
+.flow-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #eeeeee;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 3rem;
+  padding: 4rem 2rem 0 2rem;
+  margin-bottom: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+  margin: 0 auto;
+  font-family: 'Chelsea Market', cursive;
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  background-color: #505f70;
+  color: #eeeeee;
+  border: none;
+  border-radius: .5rem;
+}
+
+button {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 1.35rem;
+  width: 9.5rem;
+  height: 9.5rem;
+  margin: 3rem auto;
+  border-radius: 50%;
+  color: #303841;
+  background-color: #d72323;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px .5rem #eeeeee;
+}
+
+button:hover {
+  background-color: #e00303;
+  color: #eeeeee;
+  transition: ease-in-out .15s;
+  box-shadow: 0px .3rem .5rem #eeeeee;
+}
+
+button:active {
+  box-shadow: 0px 0px .5rem #eeeeee;
+  background-color: #d72323;
+}
+
+p {
+  display: inline-block;
+  color: #eeeeee;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 2rem; 
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 750px) {
+  h1 {
+    font-size: 4.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .flow-box {
+    display: block;
+  }
+
+  input {
+    margin-right: 5rem;
+  }
+
+  p {
+    width: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 6rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
