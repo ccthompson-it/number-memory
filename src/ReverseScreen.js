@@ -34,9 +34,9 @@ class ReverseScreen extends Component {
 
     if (guess.length === answer.length) {
       if (checkGuess(guess, answer)) {
-        this.setState({ guessText: "True", color: "green" })
+        this.setState({ guessText: "Correct", color: "green" })
       } else {
-        this.setState({ guessText: "False", color: "#d72323" })
+        this.setState({ guessText: "Incorrect", color: "#d72323" })
       }
     } else {
       this.setState({ guessText: "?", color: "#eeeeee" })
